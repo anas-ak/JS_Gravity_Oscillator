@@ -1,0 +1,32 @@
+<!-- The Control Box -->
+
+input(id = "toggleCheckbox" type = "checkbox")
+label(for = "toggleCheckbox") 
+    p(id = "toggleButton")
+
+ul  
+    li  
+        select(id="multiply")
+            option(value="lighter") lighter 
+            option(value="xor") xor 
+            option(value="") none
+        span Multiply 
+    
+    li 
+        input(id="numberOfShapes" type="range" min="1" max="2000" value="500" step="1")
+        span Shapes 
+    
+    li  
+        input(id="size" type="range" min="1"  max="100" value="2" step="1")
+        span Max Size 
+    
+    li 
+        input(id="collision" type="checkbox")
+        label(for="collision")
+            span Collision 
+
+    li  
+        button(id="makeGravityPoints") Make Gravity Points
+
+    li 
+        button(id="reset") Reset    

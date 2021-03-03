@@ -1,0 +1,48 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Gravity Attractor</title>
+    <link rel="stylesheet" href="style.css">
+    <script src='app.js'></script>
+</head>
+<body>
+        <!-- The Control Box -->
+    <input id="toggleCheckbox" type="checkbox">
+    <label for="toggleCheckbox"> 
+        <p id="toggleButton"></p>
+    </label>
+    <ul> 
+        <li> 
+            <select id="multiply">
+                <option value="lighter">lighter </option>
+                <option value="xor">xor </option>
+                <option value="">none</option>
+            </select><span> Multiply </span>
+        </li>
+        <li> 
+            <input id="numberOfShapes" type="range" min="1" max="2000" value="500" step="1">
+            <span>Shapes </span>
+        </li>
+        <li> 
+            <input id="size" type="range" min="1" max="100" value="2" step="1">
+            <span>Max Size </span>
+        </li>
+        <li> 
+            <input id="collision" type="checkbox">
+            <label for="collision">
+                <span>Collision </span>
+            </label>
+        </li>
+        <li> 
+            <button id="makeGravityPoints">Make Gravity Points</button>
+        </li>
+        <li> 
+            <button id="reset">Reset</button>
+        </li>
+        </ul>
+</body>
+</html>
